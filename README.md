@@ -53,23 +53,23 @@ The database comrises of seven tables that includes:
 
 ## 🎯 Approach
 
-- [Top 5 Oldest Instagram Users](https://github.com/AnalystDaipayan/Instagram_Data_Analytics/blob/main/SQLSolution/InstagramAnalysis.sql)
+- [Top 5 Oldest Instagram Users]
 Analysed this with the help of the Users table, by arranging the data with the help of the date in the ascending order and limitinf itto 5.
 
-- [Users Who Never Posted](https://github.com/AnalystDaipayan/Instagram_Data_Analytics/blob/main/SQLSolution/InstagramAnalysis.sql)
+- [Users Who Never Posted]
 Analysed this by Joining two tables i.e. Users and Photos particularly by Left Join as it gave the data of all the users and was able to seggregate the required users by those whose photo_id was NULL.
 
-- [User with the most liked Single Photo](https://github.com/AnalystDaipayan/Instagram_Data_Analytics/blob/main/SQLSolution/InstagramAnalysis.sql)
+- [User with the most liked Single Photo]
 Analysed this by using subquery where first found the photo_id which had the maximum likes by using COUNT and GROUP BY Functions and then did a INNER JOIN with the WHERE condition as the result of subquery.
 
-- [Top 5 most used Hashtags](https://github.com/AnalystDaipayan/Instagram_Data_Analytics/blob/main/SQLSolution/InstagramAnalysis.sql)
+- [Top 5 most used Hashtags]
 Analysed this with the help of tags and photo tags table by again using a subquery where found the tag_id from the tag table first and then used it as a where condition in Photo_tags table.
 
-- [Most Active Day](https://github.com/AnalystDaipayan/Instagram_Data_Analytics/blob/main/SQLSolution/InstagramAnalysis.sql)
+- [Most Active Day]
 Analysed this with the help of a Date Function i.e. DAYNAME(), which extracted the name of the week day from the creation date in the users table and sorted it by the GROUP BY function.
 
-- [Average User Engagement](https://github.com/AnalystDaipayan/Instagram_Data_Analytics/blob/main/SQLSolution/InstagramAnalysis.sql)
+- [Average User Engagement]
 Analysed this by doing a calculation by Total Photos/Total Users
 
-- [Spotting the Fake/Bot Accounts](https://github.com/AnalystDaipayan/Instagram_Data_Analytics/blob/main/SQLSolution/InstagramAnalysis.sql)
+- [Spotting the Fake/Bot Accounts]
 Analysed this by the concept of Multiple subquery where first tried to find the total count of photos and then putting it in the where condition to see which user has liked that many times.
